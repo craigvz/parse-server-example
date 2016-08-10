@@ -161,7 +161,7 @@ Parse.Cloud.afterSave ('IncidentDetails',function (request) {
                                        sound: "SBCPushAlert.wav"
                                        }
                                        }, {
-                                       useMasterKey: true
+                                       useMasterKey: true,
                                        success: function() {
                                        // Push was successful
                                        },
