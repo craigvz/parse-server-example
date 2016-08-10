@@ -21,7 +21,7 @@ var api = new ParseServer({
                           ios: [
                                 {
                                 pfx: 'Certificates.p12',
-                                bundleId: 'com.example.parsetest',
+                                bundleId: 'com.bluehula.parsetest',
                                 production: false
                                 }
                                 ]
