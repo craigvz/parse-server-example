@@ -15,12 +15,12 @@ var api = new ParseServer({
   databaseURI: databaseUri || 'mongodb://craigvz:blueHula@ds013931.mlab.com:13931/dispatch_test',
   cloud: process.env.CLOUD_CODE_MAIN || __dirname + '/cloud/main.js',
   appId: process.env.APP_ID || 'dispatchtest1',
-  masterKey: process.env.MASTER_KEY || '123456', //Add your master key here. Keep it secret!
+  masterKey: process.env.MASTER_KEY || '123', //Add your master key here. Keep it secret!
   serverURL: process.env.SERVER_URL || 'https://dispatchtest1.herokuapp.com/parse',
                           push: {
                           ios: [
                                 {
-                                pfx: 'Certificates.p12',
+                                pfx: 'cert.p12',
                                 bundleId: 'com.bluehula.parsetest',
                                 production: false
                                 }
