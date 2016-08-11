@@ -156,8 +156,8 @@ Parse.Cloud.afterSave ('IncidentDetails',function (request) {
                        Parse.Push.send({
                                        channels: request.object.get("channels"),
                                        data: {
-                                       alert: { "title": [request.object.get("incidentType")], "body": [request.object.get("address1")] + ", " + [request.object.get("city")], "subtitle": [request.object.get("unitID")]},
-                                     //  alert: [request.object.get("incidentType")] + ", " + [request.object.get("address1")] + ", " + [request.object.get("city")]+ ", " + [request.object.get("unitID")],
+                                      // alert: { "title": [request.object.get("incidentType")], "body": [request.object.get("address1")] + ", " + [request.object.get("city")], "subtitle": [request.object.get("unitID")]},
+                                       alert: [request.object.get("incidentType")] + ", " + [request.object.get("address1")] + ", " + [request.object.get("city")]+ ", " + [request.object.get("unitID")],
                                        lat: request.object.get("lat"),
                                        lon: request.object.get("lon"),
                                        sound: "SBCPushAlert.wav"
