@@ -161,8 +161,8 @@ Parse.Cloud.afterSave ('IncidentDetails',function (request) {
                                        alert: [request.object.get("incidentType")] + ", " + [request.object.get("address1")] + ", " + [request.object.get("city")]+ ", " + [request.object.get("unitID")],
                                        lat: request.object.get("lat"),
                                        lon: request.object.get("lon"),
-                                       sound: "SBCPushAlert.wav",
-                                       mutable-content:"1"
+                                       sound: "SBCPushAlert.wav"
+                                     //  mutable-content:"1"
                                        }
                                        }, {
                                        useMasterKey: true,
