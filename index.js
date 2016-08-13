@@ -17,10 +17,7 @@ var api = new ParseServer({
   appId: process.env.APP_ID || 'dispatchtest1',
   masterKey: process.env.MASTER_KEY || '123', //Add your master key here. Keep it secret!
   serverURL: process.env.SERVER_URL || 'https://dispatchtest1.herokuapp.com/parse',
-                          push: {
-                          adapter: parse-server-push-adapter
-                          },
-                          {
+                          push:{
                           ios: [
                                 {
                                 pfx: 'cert.p12',
