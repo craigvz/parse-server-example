@@ -162,7 +162,7 @@ Parse.Cloud.afterSave ('IncidentDetails',function (request) {
                                        lat: request.object.get("lat"),
                                        lon: request.object.get("lon"),
                                        sound: "SBCPushAlert.wav"
-                                      // mutable-content:1
+                                       mutable-content:1
                                        }
                                        }, {
                                        useMasterKey: true,
